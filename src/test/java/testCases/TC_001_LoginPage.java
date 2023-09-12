@@ -17,6 +17,7 @@ public class TC_001_LoginPage extends BaseClass{
 		
 		System.out.println("Came in the main test case");
 		
+		// Creating object
 		LoginPage lp = new LoginPage(driver);
 		CallforPaper cp = new CallforPaper(driver);
 		
@@ -49,6 +50,7 @@ public class TC_001_LoginPage extends BaseClass{
 		cp.clickAddButton();
 		Thread.sleep(6000);
 		
+		// Click on edit call for paper
 		cp.clickEditCallForPaper(value);
 		
 		Thread.sleep(8000);
