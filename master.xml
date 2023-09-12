@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="FrameworkSuite">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"></listener>
+	</listeners>
+	<test thread-count="5" name="FrameworkTest">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="testCases.TC_001_LoginPage" />
+			<!--<class name="testCases.TC_003_RegisterPage"/>-->
+			<!-- <class name="testCases.TC_002_LoginDDT"/>-->
+		</classes>
+	</test> <!--
+	FrameworkTest -->
+
+</suite> <!--
+FrameworkSuite -->
+	
